@@ -30,12 +30,12 @@ namespace FakeACall
             Button button = FindViewById<Button>(Resource.Id.button1);
 
             button.Click += delegate {
-                const string accountSid = "ACe29c144db149972dbf5427bbdd0c16dd";
-                const string authToken = "661848e78edfd1af8e5f98a0ab94bea6";
+                const string accountSid = "<Twilio Account SID>";
+                const string authToken = "<Twilio Auth Token>";
                 TwilioClient.Init(accountSid, authToken);
 
-                var to = new PhoneNumber("+918439056262");
-                var from = new PhoneNumber("+12184232045");
+                var to = new PhoneNumber("<Your Phone Number>");
+                var from = new PhoneNumber("<Twilio Phone Number>");
                 var call = CallResource.Create(to, from,
                     twiml: new Twiml("<Response><Say>Hey there. Hope you're doing well. Well done getting this call running. Use this opportunity to get away from here.</Say></Response>"));
 
