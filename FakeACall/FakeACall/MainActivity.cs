@@ -34,8 +34,6 @@ namespace FakeACall
                 button.Text = "Attempting Call";
                 await Call();
             };
-            button.Text = "Call Successful";
-            Thread.Sleep(3000);
             button.Text = "Call Now";
 
             SetAmbientEnabled();
