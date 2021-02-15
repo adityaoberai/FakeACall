@@ -17,7 +17,7 @@
             android:text="Call Now"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/button1" />
+            android:id="@+id/button1"/>
 
     </FrameLayout>
 </android.support.wear.widget.BoxInsetLayout>

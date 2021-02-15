@@ -12,10 +12,10 @@ using Android.Support.V4.View;
 using Android.Support.Wearable.Activity;
 using Java.Interop;
 using Android.Views.Animations;
-using Twilio;
-using Twilio.Rest.Api.V2010.Account;
-using Twilio.Types;
-using Twilio.TwiML;
+using System.IO;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace FakeACall
 {
@@ -29,21 +29,32 @@ namespace FakeACall
 
             Button button = FindViewById<Button>(Resource.Id.button1);
 
-            button.Click += delegate {
-                const string accountSid = "<Twilio Account SID>";
-                const string authToken = "<Twilio Auth Token>";
-                TwilioClient.Init(accountSid, authToken);
-
-                var to = new PhoneNumber("<Your Phone Number>");
-                var from = new PhoneNumber("<Twilio Phone Number>");
-                var call = CallResource.Create(to, from,
-                    twiml: new Twiml("<Response><Say>Hey there. Hope you're doing well. Well done getting this call running. Use this opportunity to get away from here.</Say></Response>"));
-
-                //Console.WriteLine(call.Sid);
+            button.Click += async delegate
+            {
+                button.Text = "Attempting Call";
+                await Call();
             };
+            button.Text = "Call Successful";
+            Thread.Sleep(3000);
+            button.Text = "Call Now";
 
             SetAmbientEnabled();
         }
+
+        private async Task Call()
+        {
+            try
+            {
+                HttpClient client = new HttpClient();
+                HttpResponseMessage response = await client.PostAsync("https://fakeacall.azurewebsites.net/api/CallNumber", null);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error Occured\n\n" + ex.Message);
+            }
+            
+        }
+
     }
 }
 
