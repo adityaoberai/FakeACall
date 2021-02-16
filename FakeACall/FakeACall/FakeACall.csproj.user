@@ -4,5 +4,6 @@
     <SelectedDevice>Fossil Carlyle HR</SelectedDevice>
     <DefaultDevice>android_wear_round_pie_9_0_-_api_28</DefaultDevice>
     <AndroidDesignerPreferredDevice>wear_round</AndroidDesignerPreferredDevice>
+    <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>
