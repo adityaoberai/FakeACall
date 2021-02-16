@@ -17,11 +17,11 @@ using System.Text;
 
 namespace Company.Function
 {
-    public static class CallNumber
+    public static class FakeCall
     {
-        [FunctionName("CallNumber")]
-        public static async Task<HttpResponseMessage> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)] HttpRequest req,
+        [FunctionName("FakeCall")]
+        public static HttpResponseMessage Run(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
