@@ -1,5 +1,7 @@
 ## FakeACall
 
+![Banner](docs/FakeACall-Banner.png)
+
 ---
 
 ### Description
