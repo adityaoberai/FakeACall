@@ -6,7 +6,7 @@
 
 ### Description
 
-**FakeACall** is a Android Wear application that allows the smartwatch owner to fake a phone call in order to get out of situations they may want to. It has been built using Xamarin.Android and uses an Azure Function and Twilio Programmable Voice to fake a phone call.
+**FakeACall** is an Android Wear application that allows the smartwatch owner to fake a phone call in order to get out of situations they may want to. It has been built using Xamarin.Android and uses an Azure Function and Twilio Programmable Voice to fake a phone call.
 
 ###  Components
 
