@@ -1,6 +1,6 @@
 ## FakeACall
 
-![Banner](docs/FakeACall-Banner.png)
+![Banner](docs/FakeACall.png)
 
 ---
 
