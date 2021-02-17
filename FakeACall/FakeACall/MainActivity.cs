@@ -52,7 +52,7 @@ namespace FakeACall
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error Occured\n\n" + ex.Message);
+                //Console.WriteLine("Error Occured\n\n" + ex.Message);
                 return false;
             }   
         }
