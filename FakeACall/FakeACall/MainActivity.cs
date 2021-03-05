@@ -2,17 +2,9 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Android.Support.Wearable.Views;
-using Android.Support.V4.App;
-using Android.Support.V4.View;
 using Android.Support.Wearable.Activity;
-using Android.Views.Animations;
-using Java.Interop;
 
 namespace FakeACall
 {
@@ -52,7 +44,6 @@ namespace FakeACall
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error Occured\n\n" + ex.Message);
                 return false;
             }   
         }

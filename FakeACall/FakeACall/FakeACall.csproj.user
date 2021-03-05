@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <SelectedDevice>Fossil Carlyle HR</SelectedDevice>
+    <SelectedDevice>android_wear_round_pie_9_0_-_api_28</SelectedDevice>
     <DefaultDevice>android_wear_round_pie_9_0_-_api_28</DefaultDevice>
     <AndroidDesignerPreferredDevice>wear_round</AndroidDesignerPreferredDevice>
     <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
+    <ActiveDebugProfile>android_wear_round_pie_9_0_-_api_28</ActiveDebugProfile>
   </PropertyGroup>
 </Project>
