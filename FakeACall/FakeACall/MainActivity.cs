@@ -39,7 +39,7 @@ namespace FakeACall
             try
             {
                 HttpClient client = new HttpClient();
-                HttpResponseMessage response = await client.PostAsync("https://callfake.azurewebsites.net/api/FakeCall", null);
+                HttpResponseMessage response = await client.PostAsync("<ADD AZURE FUNCTION URL HERE>", null);
                 return true;
             }
             catch (Exception ex)
