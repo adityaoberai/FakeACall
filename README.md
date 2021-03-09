@@ -19,3 +19,9 @@
 ### Demo
 
 ![Recording](docs/Recording.gif)
+
+---
+
+### Learn How To Build It
+
+You can learn how to build this app for yourself by reading the article [here](https://dev.to/adityaoberai/fake-a-phone-call-from-wear-os-smartwatches-using-xamarin-azure-functions-and-twilio-2j56)
